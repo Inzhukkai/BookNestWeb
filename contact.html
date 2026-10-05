@@ -1,191 +1,253 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookNest | Contact</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>BookNest - Contact</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Our CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
 </head>
+
 
 <body>
 
-<header>
 
-    <div class="container nav-container">
+<!-- NAVBAR  -->
 
-        <a href="index.html" class="logo">
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+    <div class="container">
+
+        <a
+            class="navbar-brand logo"
+            href="index.html">
+
             Book<span>Nest</span>
+
         </a>
 
-        <nav class="nav-menu">
 
-            <a href="index.html">
-                Home
-            </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Open navigation menu">
 
-            <a href="books.html">
-                Library
-            </a>
+            <span class="navbar-toggler-icon"></span>
 
-            <a href="authors.html">
-                Authors & Team
-            </a>
+        </button>
 
-            <a href="contact.html" class="active">
-                Contact
-            </a>
 
-        </nav>
+        <div
+            class="collapse navbar-collapse"
+            id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="books.html">
+
+                        Library
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="authors.html">
+
+                        Authors
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link active"
+                        href="contact.html">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- HEADER -->
+
+<header class="hero">
+
+    <div class="container text-center">
+
+        <p class="small-title">
+            CONTACT BOOKNEST
+        </p>
+
+        <h1>
+            Let's talk about
+            <span>books.</span>
+        </h1>
+
+        <p class="hero-text">
+            Have a question or want to recommend
+            a book? Send us a message.
+        </p>
 
     </div>
 
 </header>
 
 
-<main class="page-layout">
 
-    <aside class="sidebar">
+<!-- CONTACT FORM -->
 
-        <p class="small-title">
-            BOOKNEST
-        </p>
+<main class="container my-5">
 
-        <h2>
-            Contact
-        </h2>
-
-        <a href="index.html">
-            Home
-        </a>
-
-        <a href="books.html">
-            Library
-        </a>
-
-        <a href="authors.html">
-            Authors
-        </a>
-
-    </aside>
+    <div class="row g-5 align-items-start">
 
 
-    <div class="main-content">
+        <!-- FORM -->
 
-        <section class="page-hero">
+        <div class="col-12 col-lg-7">
 
-            <p class="small-title">
-                LET'S TALK BOOKS
-            </p>
+            <div class="mb-4">
 
-            <h1>
-                Tell us what you want to read.
-            </h1>
+                <p class="small-title">
+                    SEND A MESSAGE
+                </p>
 
-            <p>
-                Recommend a book, tell us your favorite
-                genre or send us a message.
-            </p>
+                <h2>
+                    Contact us
+                </h2>
 
-        </section>
+                <p>
+                    Fill in the form and we will
+                    receive your message.
+                </p>
 
-
-        <section class="section">
-
-            <div class="contact-grid">
-
-                <!-- LEFT -->
-                <div class="contact-info">
-
-                    <p class="small-title">
-                        GET IN TOUCH
-                    </p>
-
-                    <h2>
-                        Have a book recommendation?
-                    </h2>
-
-                    <p>
-                        We are always interested in
-                        discovering new stories.
-                    </p>
+            </div>
 
 
-                    <div class="contact-detail">
-
-                        <span>01</span>
-
-                        <div>
-                            <h3>Email</h3>
-                            <p>
-                                booknest@example.com
-                            </p>
-                        </div>
-
-                    </div>
+            <form
+                class="p-4 border rounded bg-white shadow-sm">
 
 
-                    <div class="contact-detail">
+                <!-- NAME -->
 
-                        <span>02</span>
+                <div class="mb-3">
 
-                        <div>
-                            <h3>Response</h3>
-                            <p>
-                                We usually reply within
-                                1–2 days.
-                            </p>
-                        </div>
+                    <label
+                        for="name"
+                        class="form-label">
 
-                    </div>
-
-
-                    <div class="contact-detail">
-
-                        <span>03</span>
-
-                        <div>
-                            <h3>Location</h3>
-                            <p>
-                                Astana, Kazakhstan
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- FORM -->
-                <form class="contact-form">
-
-                    <label for="name">
                         Your Name
+
                     </label>
+
 
                     <input
                         type="text"
+                        class="form-control"
                         id="name"
                         placeholder="Enter your name"
                         required>
 
+                </div>
 
-                    <label for="email">
+
+                <!-- EMAIL -->
+
+                <div class="mb-3">
+
+                    <label
+                        for="email"
+                        class="form-label">
+
                         Email Address
+
                     </label>
+
 
                     <input
                         type="email"
+                        class="form-control"
                         id="email"
                         placeholder="you@example.com"
                         required>
 
+                </div>
 
-                    <label for="genre">
+
+                <!-- GENRE -->
+
+                <div class="mb-3">
+
+                    <label
+                        for="genre"
+                        class="form-label">
+
                         Favorite Genre
+
                     </label>
 
-                    <select id="genre" required>
+
+                    <select
+                        class="form-select"
+                        id="genre"
+                        required>
 
                         <option value="">
                             Choose a genre
@@ -207,66 +269,274 @@
                             Mystery
                         </option>
 
+                        <option>
+                            Classics
+                        </option>
+
                     </select>
 
+                </div>
 
-                    <label for="message">
+
+                <!-- RADIO BUTTONS -->
+
+                <fieldset class="mb-3">
+
+                    <legend class="form-label h6">
+                        What are you interested in?
+                    </legend>
+
+
+                    <div class="form-check">
+
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="interest"
+                            id="recommendations"
+                            value="recommendations"
+                            checked>
+
+                        <label
+                            class="form-check-label"
+                            for="recommendations">
+
+                            Book recommendations
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="form-check">
+
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="interest"
+                            id="authors"
+                            value="authors">
+
+                        <label
+                            class="form-check-label"
+                            for="authors">
+
+                            Authors
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="form-check">
+
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="interest"
+                            id="website"
+                            value="website">
+
+                        <label
+                            class="form-check-label"
+                            for="website">
+
+                            Website
+
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- MESSAGE -->
+
+                <div class="mb-3">
+
+                    <label
+                        for="message"
+                        class="form-label">
+
                         Your Message
+
                     </label>
 
+
                     <textarea
+                        class="form-control"
                         id="message"
-                        rows="6"
+                        rows="5"
                         placeholder="Write your message..."
                         required></textarea>
 
+                </div>
 
-                    <button
-                        type="submit"
-                        class="button">
 
-                        Send Message
+                <!-- CHECKBOX -->
 
-                    </button>
+                <div class="form-check mb-4">
 
-                </form>
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="newsletter">
+
+                    <label
+                        class="form-check-label"
+                        for="newsletter">
+
+                        Subscribe to BookNest updates
+
+                    </label>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-lg w-100">
+
+                    Send Message
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+
+        <!--CONTACT INFORMATION -->
+
+        <div class="col-12 col-lg-5">
+
+            <div class="info-box">
+
+                <p class="small-title">
+                    BOOKNEST
+                </p>
+
+                <h2>
+                    Stay connected.
+                </h2>
+
+                <p>
+                    We love discovering new books
+                    and talking about stories.
+                </p>
+
+
+                <hr class="my-4">
+
+
+                <h3 class="h5">
+                    Email
+                </h3>
+
+                <p>
+                    hello@booknest.com
+                </p>
+
+
+                <h3 class="h5 mt-4">
+                    Working Hours
+                </h3>
+
+                <p>
+                    Monday - Friday
+                    <br>
+                    09:00 - 18:00
+                </p>
+
+
+                <h3 class="h5 mt-4">
+                    Location
+                </h3>
+
+                <p>
+                    Astana, Kazakhstan
+                </p>
+
+
+                <!-- BUTTON GROUP -->
+
+                <div
+                    class="btn-group mt-3"
+                    role="group"
+                    aria-label="Contact actions">
+
+                    <a
+                        href="books.html"
+                        class="btn btn-primary">
+                        Library
+                    </a>
+
+                    <a
+                        href="authors.html"
+                        class="btn btn-outline-secondary">
+                        Authors
+                    </a>
+
+                </div>
 
             </div>
 
-        </section>
+        </div>
 
     </div>
 
 </main>
 
 
-<footer>
 
-    <div class="footer-content">
+<!-- FOOTER -->
 
-        <div>
+<footer class="site-footer">
 
-            <a href="index.html" class="logo">
-                Book<span>Nest</span>
-            </a>
+    <div class="container">
 
-            <p>
-                A small digital home for great stories.
-            </p>
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6">
+
+                <a
+                    href="index.html"
+                    class="logo">
+
+                    Book<span>Nest</span>
+
+                </a>
+
+                <p class="mt-2">
+                    A small digital home for great stories.
+                </p>
+
+            </div>
+
+
+            <div class="col-12 col-md-6">
+
+                <h3 class="h6">
+                    Team Members
+                </h3>
+
+                <p>
+                    Inzhu · Akerke
+                </p>
+
+            </div>
 
         </div>
 
-        <div>
 
-            <strong>Team Members</strong>
+        <hr>
 
-            <p>
-                Inzhu· Akerke
-            </p>
 
-        </div>
-
-        <p>
+        <p class="text-center mb-0">
             © 2026 BookNest
         </p>
 
@@ -274,5 +544,15 @@
 
 </footer>
 
+
+>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
 </body>
+
 </html>
+```

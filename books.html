@@ -1,505 +1,464 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookNest | Library</title>
+
+    <title>BookNest - Library</title>
+
+    <!-- Bootstrap-->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
+<!-- NAVBAR -->
 
-    <div class="container nav-container">
+<nav class="navbar navbar-expand-lg navbar-dark">
 
-        <a href="index.html" class="logo">
+    <div class="container">
+
+        <a class="navbar-brand logo" href="index.html">
             Book<span>Nest</span>
         </a>
 
-        <nav class="nav-menu">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Open navigation menu">
 
-            <a href="index.html">Home</a>
+            <span class="navbar-toggler-icon"></span>
 
-            <a href="books.html" class="active">
-                Library
-            </a>
+        </button>
 
-            <a href="authors.html">
-                Authors & Team
-            </a>
+        <div class="collapse navbar-collapse" id="mainNavbar">
 
-            <a href="contact.html">
-                Contact
-            </a>
+            <ul class="navbar-nav ms-auto">
 
-        </nav>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="books.html">
+                        Library
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="authors.html">
+                        Authors
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- PAGE HEADER -->
+
+<header class="hero">
+
+    <div class="container text-center">
+
+        <p class="small-title">
+            BOOKNEST LIBRARY
+        </p>
+
+        <h1>
+            Find your next
+            <span>story.</span>
+        </h1>
+
+        <p class="hero-text">
+            Explore our collection of classic,
+            romantic, fantasy and mystery books.
+        </p>
 
     </div>
 
 </header>
 
 
-<main class="page-layout">
+<!--BOOK GRID-->
 
-    <aside class="sidebar">
+<main class="container my-5">
+
+    <div class="text-center mb-5">
 
         <p class="small-title">
-            BOOKNEST
+            OUR COLLECTION
         </p>
 
         <h2>
-            Library
+            Popular Books
         </h2>
 
-        <a href="#fiction">
-            Fiction
-        </a>
-
-        <a href="#romance">
-            Romance
-        </a>
-
-        <a href="#fantasy">
-            Fantasy
-        </a>
-
-        <a href="#mystery">
-            Mystery
-        </a>
-
-    </aside>
-
-
-    <div class="main-content">
-
-        <section class="page-hero">
-
-            <p class="small-title">
-                BOOK COLLECTION
-            </p>
-
-            <h1>
-                Explore our library.
-            </h1>
-
-            <p>
-                Find fiction, romance, fantasy and mystery
-                books in our collection.
-            </p>
-
-        </section>
-
-
-        <!-- FICTION -->
-        <section class="section" id="fiction">
-
-            <p class="small-title">
-                FICTION
-            </p>
-
-            <h2>
-                Fiction Books
-            </h2>
-
-
-            <div class="book-cards">
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>FICTION</span>
-
-                        <h3>
-                            The Great Gatsby
-                        </h3>
-
-                        <p>
-                            A classic story about ambition,
-                            love and the American Dream.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>FICTION</span>
-
-                        <h3>
-                            1984
-                        </h3>
-
-                        <p>
-                            A famous story about society,
-                            freedom and control.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>FICTION</span>
-
-                        <h3>
-                            To Kill a Mockingbird
-                        </h3>
-
-                        <p>
-                            A story about family, justice
-                            and growing up.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ROMANCE -->
-        <section class="section" id="romance">
-
-            <p class="small-title">
-                ROMANCE
-            </p>
-
-            <h2>
-                Romance Books
-            </h2>
-
-
-            <div class="book-cards">
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1511108690759-009324a90311?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>ROMANCE</span>
-
-                        <h3>
-                            Pride and Prejudice
-                        </h3>
-
-                        <p>
-                            A romantic story about Elizabeth
-                            and Mr. Darcy.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>ROMANCE</span>
-
-                        <h3>
-                            Me Before You
-                        </h3>
-
-                        <p>
-                            An emotional story about love,
-                            choices and life.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>ROMANCE</span>
-
-                        <h3>
-                            The Notebook
-                        </h3>
-
-                        <p>
-                            A memorable story about
-                            love and relationships.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- FANTASY -->
-        <section class="section" id="fantasy">
-
-            <p class="small-title">
-                FANTASY
-            </p>
-
-            <h2>
-                Fantasy Books
-            </h2>
-
-
-            <div class="book-cards">
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>FANTASY</span>
-
-                        <h3>
-                            The Hobbit
-                        </h3>
-
-                        <p>
-                            A magical adventure with
-                            unexpected discoveries.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>FANTASY</span>
-
-                        <h3>
-                            Game of Thrones
-                        </h3>
-
-                        <p>
-                            A fantasy world full of
-                            kingdoms and adventures.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>FANTASY</span>
-
-                        <h3>
-                            Harry Potter
-                        </h3>
-
-                        <p>
-                            A young wizard discovers
-                            a magical world.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- MYSTERY -->
-        <section class="section" id="mystery">
-
-            <p class="small-title">
-                MYSTERY
-            </p>
-
-            <h2>
-                Mystery Books
-            </h2>
-
-
-            <div class="book-cards">
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>MYSTERY</span>
-
-                        <h3>
-                            Gone Girl
-                        </h3>
-
-                        <p>
-                            A mystery full of secrets
-                            and unexpected twists.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>MYSTERY</span>
-
-                        <h3>
-                            And Then There Were None
-                        </h3>
-
-                        <p>
-                            A classic mystery with
-                            many questions.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=500&q=80">
-
-                    <div class="book-card-content">
-
-                        <span>MYSTERY</span>
-
-                        <h3>
-                            The Murder of Roger Ackroyd
-                        </h3>
-
-                        <p>
-                            A detective story with
-                            an unexpected ending.
-                        </p>
-
-                        <button class="button">
-                            Read More
-                        </button>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
+        <p>
+            Choose a book and discover a new world.
+        </p>
 
     </div>
+
+
+    <div class="row g-4">
+
+        <!-- BOOK 1 -->
+
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80"
+                    class="card-img-top"
+                    alt="The Great Gatsby book">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5">
+                        The Great Gatsby
+                    </h3>
+
+                    <p class="text-muted">
+                        F. Scott Fitzgerald
+                    </p>
+
+                    <p class="card-text">
+                        A classic story about dreams,
+                        love and the American society.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary">
+                        Read More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK 2 -->
+
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <img
+                    src="https://images.unsplash.com/photo-1511108690759-009324a90311?auto=format&fit=crop&w=600&q=80"
+                    class="card-img-top"
+                    alt="Pride and Prejudice book">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5">
+                        Pride and Prejudice
+                    </h3>
+
+                    <p class="text-muted">
+                        Jane Austen
+                    </p>
+
+                    <p class="card-text">
+                        A romantic classic about
+                        relationships, love and society.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary">
+                        Read More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK 3 -->
+
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <img
+                    src="https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?auto=format&fit=crop&w=600&q=80"
+                    class="card-img-top"
+                    alt="The Hobbit book">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5">
+                        The Hobbit
+                    </h3>
+
+                    <p class="text-muted">
+                        J. R. R. Tolkien
+                    </p>
+
+                    <p class="card-text">
+                        A fantasy adventure about
+                        Bilbo Baggins and his journey.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary">
+                        Read More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK 4 -->
+
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <img
+                    src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80"
+                    class="card-img-top"
+                    alt="Books in a library">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5">
+                        Little Women
+                    </h3>
+
+                    <p class="text-muted">
+                        Louisa May Alcott
+                    </p>
+
+                    <p class="card-text">
+                        A story about family,
+                        friendship and growing up.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary">
+                        Read More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK 5 -->
+
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80"
+                    class="card-img-top"
+                    alt="Open book">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5">
+                        Jane Eyre
+                    </h3>
+
+                    <p class="text-muted">
+                        Charlotte Brontë
+                    </p>
+
+                    <p class="card-text">
+                        A classic novel about love,
+                        independence and identity.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary">
+                        Read More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK 6 -->
+
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlVE4tY5RW--AIeu0ZE9MUzS-daO8xLpCbTimjq1cn46sAOVEbdKpOi5bphoED6mYgzYepe_HyxEdoGCTGYiEJAhXhHBYGBlhgKbrH5do&s=10"
+                    class="card-img-top"
+                    alt="Stack of books">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5">
+                        The Alchemist
+                    </h3>
+
+                    <p class="text-muted">
+                        Paulo Coelho
+                    </p>
+
+                    <p class="card-text">
+                        A philosophical journey about
+                        dreams and finding your purpose.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary">
+                        Read More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOOTSTRAP GRID -->
+
+    <section class="my-5">
+
+        <div class="row g-4">
+
+            <div class="col-12 col-lg-6">
+
+                <div class="info-box h-100">
+
+                    <p class="small-title">
+                        FICTION
+                    </p>
+
+                    <h2>
+                        Stories that inspire.
+                    </h2>
+
+                    <p>
+                        Explore fictional worlds and
+                        unforgettable characters.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-lg-6">
+
+                <div class="info-box h-100">
+
+                    <p class="small-title">
+                        CLASSICS
+                    </p>
+
+                    <h2>
+                        Stories that stay.
+                    </h2>
+
+                    <p>
+                        Discover books that have remained
+                        popular for generations.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
 
-<footer>
+<!-- FOOTER -->
 
-    <div class="footer-content">
+<footer class="site-footer">
 
-        <div>
-            <a href="index.html" class="logo">
-                Book<span>Nest</span>
-            </a>
+    <div class="container">
 
-            <p>
-                A small digital home for great stories.
-            </p>
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6">
+
+                <a
+                    href="index.html"
+                    class="logo">
+                    Book<span>Nest</span>
+                </a>
+
+                <p class="mt-2">
+                    A small digital home for great stories.
+                </p>
+
+            </div>
+
+
+            <div class="col-12 col-md-6">
+
+                <h3 class="h6">
+                    Team Members
+                </h3>
+
+                <p>
+                    Inzhu · Akerke
+                </p>
+
+            </div>
+
         </div>
 
-        <div>
-            <strong>Team Members</strong>
-            <p>Inzhu · Akerke</p>
-        </div>
+        <hr>
 
-        <p>
+        <p class="text-center mb-0">
             © 2026 BookNest
         </p>
 
@@ -507,5 +466,11 @@
 
 </footer>
 
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
 </body>
 </html>
+```

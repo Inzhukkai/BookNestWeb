@@ -4,418 +4,733 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookNest | Home</title>
+
+    <title>BookNest - Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Our CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="container nav-container">
+<!-- NAVBAR -->
 
-        <a href="index.html" class="logo">
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+    <div class="container">
+
+        <a class="navbar-brand logo" href="index.html">
             Book<span>Nest</span>
         </a>
 
-        <nav class="nav-menu">
-            <a href="index.html" class="active">Home</a>
-            <a href="books.html">Library</a>
-            <a href="authors.html">Authors & Team</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Open navigation menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">
+                        Library
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="authors.html">
+                        Authors
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
 
     </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+    <div class="container text-center">
+
+        <p class="small-title">
+            WELCOME TO BOOKNEST
+        </p>
+
+        <h1>
+            Find your next<br>
+            <span>great story.</span>
+        </h1>
+
+        <p class="hero-text">
+            Discover books, explore new worlds,
+            and find stories that stay with you.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="books.html"
+                class="btn btn-primary btn-lg">
+                Explore Library
+            </a>
+
+            <a
+                href="#genres"
+                class="btn btn-outline-secondary btn-lg">
+                Browse Genres
+            </a>
+
+        </div>
+
+    </div>
+
 </header>
 
 
-<main class="page-layout">
+<!-- BUTTON GROUP-->
+<section class="container text-center my-5">
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
+    <h2>Explore BookNest</h2>
 
-        <p class="small-title">BOOKNEST</p>
+    <p>
+        Choose where you want to go.
+    </p>
 
-        <h2>Quick Menu</h2>
+    <div
+        class="btn-group mt-3"
+        role="group"
+        aria-label="BookNest navigation">
 
-        <a href="index.html">Home</a>
-        <a href="books.html">Library</a>
-        <a href="authors.html">Authors</a>
-        <a href="contact.html">Contact</a>
+        <a
+            href="books.html"
+            class="btn btn-primary">
+            Library
+        </a>
 
-        <div class="sidebar-note">
-            <strong>Reading tip</strong>
+        <a
+            href="authors.html"
+            class="btn btn-outline-secondary">
+            Authors
+        </a>
+
+        <a
+            href="contact.html"
+            class="btn btn-secondary">
+            Contact
+        </a>
+
+    </div>
+
+</section>
+
+
+<!--RESPONSIVE TYPOGRAPHY-->
+
+<section class="container my-5">
+
+    <p class="small-title">
+        RESPONSIVE DESIGN
+    </p>
+
+    <h2>
+        Books for every screen.
+    </h2>
+
+    <p>
+        BookNest automatically changes its typography
+        depending on the screen size. The text is larger
+        on desktop, medium on tablets and smaller on mobile.
+    </p>
+
+</section>
+
+
+<!--MEDIA QUERY CARDS-->
+
+<section class="container my-5">
+
+    <p class="small-title">
+        RESPONSIVE LAYOUT
+    </p>
+
+    <h2>
+        Read anywhere.
+    </h2>
+
+    <p class="mb-4">
+        BookNest works comfortably on desktop,
+        tablet and mobile devices.
+    </p>
+
+    <div class="responsive-card-group">
+
+        <article class="responsive-card">
+
+            <span class="card-number">
+                01
+            </span>
+
+            <h3>
+                Desktop
+            </h3>
+
             <p>
-                Choose a genre and find a story
-                that matches your mood.
+                Three cards are displayed in one row
+                on large screens.
             </p>
+
+        </article>
+
+
+        <article class="responsive-card">
+
+            <span class="card-number">
+                02
+            </span>
+
+            <h3>
+                Tablet
+            </h3>
+
+            <p>
+                Two cards are displayed in one row
+                on medium screens.
+            </p>
+
+        </article>
+
+
+        <article class="responsive-card">
+
+            <span class="card-number">
+                03
+            </span>
+
+            <h3>
+                Mobile
+            </h3>
+
+            <p>
+                Cards are stacked vertically
+                on small screens.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- BOOTSTRAP GRID -->
+
+<section class="container my-5">
+
+    <div class="row align-items-center g-4">
+
+    
+
+        <div class="col-12 col-lg-6">
+
+            <p class="small-title">
+                ABOUT BOOKNEST
+            </p>
+
+            <h2>
+                A small home for
+                great stories.
+            </h2>
+
+            <p>
+                BookNest is a digital place where
+                readers can discover interesting books,
+                authors and different genres.
+            </p>
+
+            <a
+                href="books.html"
+                class="btn btn-primary mt-3">
+                View Library
+            </a>
+
         </div>
 
-    </aside>
 
+    
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
+        <div class="col-12 col-lg-6">
 
-        <!-- HERO -->
-        <section class="hero">
+            <div class="info-box">
 
-            <div class="hero-text">
-
-                <p class="small-title">
-                    YOUR DIGITAL BOOK CORNER
-                </p>
-
-                <h1>
-                    Find a story that stays with you.
-                </h1>
+                <h3>
+                    Why BookNest?
+                </h3>
 
                 <p>
-                    Welcome to BookNest, a small digital
-                    library where fiction, romance, fantasy
-                    and mystery come together.
+                    Easy navigation, responsive design
+                    and a simple reading-focused interface.
                 </p>
 
-                <div class="hero-buttons">
+            </div>
 
-                    <a href="books.html" class="button">
-                        Explore Library
-                    </a>
+        </div>
 
-                    <a href="#genres" class="button button-light">
-                        Browse Genres
+    </div>
+
+</section>
+
+
+<!-- BOOK CARDS-->
+
+<section
+    id="genres"
+    class="container my-5">
+
+    <div class="text-center mb-4">
+
+        <p class="small-title">
+            POPULAR BOOKS
+        </p>
+
+        <h2>
+            Stories worth discovering.
+        </h2>
+
+    </div>
+
+
+    <div class="row g-4">
+
+        <!-- CARD 1 -->
+
+        <div class="col-12 col-md-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80"
+                    class="card-img-top"
+                    alt="A classic book">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5">
+                        The Great Gatsby
+                    </h3>
+
+                    <p class="card-text">
+                        A classic story about dreams,
+                        love and society.
+                    </p>
+
+                    <a
+                        href="books.html"
+                        class="btn btn-primary">
+                        Read More
                     </a>
 
                 </div>
 
             </div>
 
+        </div>
 
-            <div class="hero-image">
+
+        <!-- CARD 2 -->
+
+        <div class="col-12 col-md-4">
+
+            <div class="card h-100 shadow-sm">
 
                 <img
-                    src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=80"
-                    alt="Library">
+                    src="https://images.unsplash.com/photo-1511108690759-009324a90311?auto=format&fit=crop&w=600&q=80"
+                    class="card-img-top"
+                    alt="Romance book">
 
-            </div>
+                <div class="card-body">
 
-        </section>
+                    <h3 class="card-title h5">
+                        Pride and Prejudice
+                    </h3>
 
-
-        <!-- WHY BOOKNEST -->
-        <section class="section">
-
-            <p class="small-title">
-                WHY BOOKNEST?
-            </p>
-
-            <h2>
-                A little corner for every reader.
-            </h2>
-
-            <p class="description">
-                Discover interesting stories and find
-                something new to read.
-            </p>
-
-
-            <!-- GRID -->
-            <div class="feature-grid">
-
-                <article class="feature-card">
-                    <span>01</span>
-                    <h3>Curated Collection</h3>
-                    <p>
-                        Find books from different genres
-                        in one place.
+                    <p class="card-text">
+                        A famous romantic story
+                        about love and society.
                     </p>
-                </article>
 
-                <article class="feature-card">
-                    <span>02</span>
-                    <h3>Easy Exploration</h3>
-                    <p>
-                        Browse books and quickly find
-                        something interesting.
+                    <a
+                        href="books.html"
+                        class="btn btn-primary">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+
+        <div class="col-12 col-md-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <img
+                    src="https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?auto=format&fit=crop&w=600&q=80"
+                    class="card-img-top"
+                    alt="Fantasy book">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5">
+                        The Hobbit
+                    </h3>
+
+                    <p class="card-text">
+                        A fantasy adventure
+                        in a magical world.
                     </p>
-                </article>
 
-                <article class="feature-card">
-                    <span>03</span>
-                    <h3>For Every Mood</h3>
-                    <p>
-                        Choose a book for a relaxing,
-                        exciting or mysterious mood.
-                    </p>
-                </article>
+                    <a
+                        href="books.html"
+                        class="btn btn-primary">
+                        Read More
+                    </a>
+
+                </div>
 
             </div>
 
-        </section>
-
-
-        <!-- GENRES -->
-        <section class="section" id="genres">
-
-            <p class="small-title">
-                EXPLORE
-            </p>
-
-            <h2>
-                Choose your next world.
-            </h2>
-
-
-            <div class="genre-grid">
-
-                <a href="books.html#fiction" class="genre-card">
-                    <span>01</span>
-                    <div>
-                        <h3>Fiction</h3>
-                        <p>
-                            Stories inspired by life,
-                            people and imagination.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="books.html#romance" class="genre-card">
-                    <span>02</span>
-                    <div>
-                        <h3>Romance</h3>
-                        <p>
-                            Love stories and unforgettable
-                            emotions.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="books.html#fantasy" class="genre-card">
-                    <span>03</span>
-                    <div>
-                        <h3>Fantasy</h3>
-                        <p>
-                            Magic, adventure and
-                            imaginary worlds.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="books.html#mystery" class="genre-card">
-                    <span>04</span>
-                    <div>
-                        <h3>Mystery</h3>
-                        <p>
-                            Secrets, investigations
-                            and unexpected twists.
-                        </p>
-                    </div>
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- FLEXBOX CARDS -->
-        <section class="section">
-
-            <p class="small-title">
-                FEATURED BOOKS
-            </p>
-
-            <h2>
-                Three stories to start with.
-            </h2>
-
-
-            <div class="book-cards">
-
-                <article class="book-card">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=500&q=80"
-                        alt="Book">
-
-                    <div class="book-card-content">
-
-                        <span>FICTION</span>
-
-                        <h3>
-                            The Great Gatsby
-                        </h3>
-
-                        <p>
-                            A classic story about ambition,
-                            love and dreams.
-                        </p>
-
-                        <a href="books.html" class="button">
-                            Read More
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1511108690759-009324a90311?auto=format&fit=crop&w=500&q=80"
-                        alt="Book">
-
-                    <div class="book-card-content">
-
-                        <span>ROMANCE</span>
-
-                        <h3>
-                            Pride and Prejudice
-                        </h3>
-
-                        <p>
-                            A warm story about relationships
-                            and first impressions.
-                        </p>
-
-                        <a href="books.html" class="button">
-                            Read More
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <article class="book-card">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?auto=format&fit=crop&w=500&q=80"
-                        alt="Book">
-
-                    <div class="book-card-content">
-
-                        <span>FANTASY</span>
-
-                        <h3>
-                            The Hobbit
-                        </h3>
-
-                        <p>
-                            An adventurous journey through
-                            a magical world.
-                        </p>
-
-                        <a href="books.html" class="button">
-                            Read More
-                        </a>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- 9 IMAGE GRID -->
-        <section class="section">
-
-            <p class="small-title">
-                BOOK GALLERY
-            </p>
-
-            <h2>
-                Stories in pictures.
-            </h2>
-
-            <p class="description">
-                Move your mouse over an image.
-            </p>
-
-
-            <div class="gallery">
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=500&q=80" alt="Books">
-                    <figcaption>The Great Gatsby</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=500&q=80" alt="Books">
-                    <figcaption>1984</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=500&q=80" alt="Books">
-                    <figcaption>Pride and Prejudice</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=500&q=80" alt="Books">
-                    <figcaption>Romance Collection</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?auto=format&fit=crop&w=500&q=80" alt="Books">
-                    <figcaption>The Hobbit</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1511108690759-009324a90311?auto=format&fit=crop&w=500&q=80" alt="Books">
-                    <figcaption>Fantasy</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=500&q=80" alt="Books">
-                    <figcaption>Mystery</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=500&q=80" alt="Books">
-                    <figcaption>Reading Time</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=500&q=80" alt="Books">
-                    <figcaption>BookNest Library</figcaption>
-                </figure>
-
-            </div>
-
-        </section>
+        </div>
 
     </div>
 
-</main>
+</section>
 
 
-<footer>
+<!--  CAROUSEL -->
 
-    <div class="footer-content">
+<section class="container my-5">
 
-        <div>
-            <a href="index.html" class="logo">
-                Book<span>Nest</span>
-            </a>
+    <div class="text-center mb-4">
 
-            <p>
-                A small digital home for great stories.
-            </p>
+        <p class="small-title">
+            BOOK COLLECTION
+        </p>
+
+        <h2>
+            Explore our collection.
+        </h2>
+
+    </div>
+
+
+    <div
+        id="bookCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel">
+
+        <!-- INDICATORS -->
+
+        <div class="carousel-indicators">
+
+            <button
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide-to="4"
+                aria-label="Slide 5">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide-to="5"
+                aria-label="Slide 6">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide-to="6"
+                aria-label="Slide 7">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide-to="7"
+                aria-label="Slide 8">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#bookCarousel"
+                data-bs-slide-to="8"
+                aria-label="Slide 9">
+            </button>
+
         </div>
 
-        <div>
-            <strong>Team Members</strong>
-            <p>Inzhu · Akerke</p>
+
+        <!-- SLIDES -->
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Book collection 1">
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1511108690759-009324a90311?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Book collection 2">
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Book collection 3">
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Book collection 4">
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Book collection 5">
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Book collection 6">
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Book collection 7">
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1513001900722-370f803f498d?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Book collection 8">
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=1200&q=80"
+                    class="d-block w-100"
+                    alt="Book collection 9">
+
+            </div>
+
         </div>
 
-        <p>
+
+        <!-- PREVIOUS -->
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#bookCarousel"
+            data-bs-slide="prev">
+
+            <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true">
+            </span>
+
+            <span class="visually-hidden">
+                Previous
+            </span>
+
+        </button>
+
+
+        <!-- NEXT -->
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#bookCarousel"
+            data-bs-slide="next">
+
+            <span
+                class="carousel-control-next-icon"
+                aria-hidden="true">
+            </span>
+
+            <span class="visually-hidden">
+                Next
+            </span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!--  FOOTER -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6">
+
+                <a
+                    href="index.html"
+                    class="logo">
+                    Book<span>Nest</span>
+                </a>
+
+                <p class="mt-2">
+                    A small digital home for great stories.
+                </p>
+
+            </div>
+
+
+            <div class="col-12 col-md-6">
+
+                <h3 class="h6">
+                    Team Members
+                </h3>
+
+                <p>
+                    Inzhu · Akerke
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <p class="text-center mb-0">
             © 2026 BookNest
         </p>
 
     </div>
 
 </footer>
+
+
+<!-- Bootstrap JavaScript -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
 
 </body>
 </html>
